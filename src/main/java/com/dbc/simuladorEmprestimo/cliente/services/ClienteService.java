@@ -8,8 +8,8 @@ import com.dbc.simuladorEmprestimo.cliente.dtos.EmprestimoDto;
 import com.dbc.simuladorEmprestimo.cliente.dtos.EnderecoDto;
 import com.dbc.simuladorEmprestimo.cliente.entities.Cliente;
 import com.dbc.simuladorEmprestimo.cliente.entities.Endereco;
+import com.dbc.simuladorEmprestimo.cliente.enums.TipoRisco;
 import com.dbc.simuladorEmprestimo.cliente.repositories.ClienteRepository;
-import com.dbc.simuladorEmprestimo.emprestimo.enums.TipoRiscoEnum;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -101,13 +101,13 @@ public class ClienteService {
         return enderecoService.salvar(enderecoDto);
     }
 
-    private TipoRiscoEnum calcularRisco(Double rendimentoMensal) {
+    private TipoRisco calcularRisco(Double rendimentoMensal) {
         if (rendimentoMensal <= RENDIMENTO_MENSAL_DOIS_MIL) {
-            return TipoRiscoEnum.C;
+            return TipoRisco.C;
         } else if (rendimentoMensal <= RENDIMENTO_MENSAL_OITO_MIL) {
-            return TipoRiscoEnum.B;
+            return TipoRisco.B;
         } else {
-            return TipoRiscoEnum.A;
+            return TipoRisco.A;
         }
     }
 
@@ -130,7 +130,7 @@ public class ClienteService {
     public Optional<EmprestimoDto> simularEmprestimo(EmprestimoDto emprestimoDto) throws ParseException {
         Optional<Cliente> cliente = buscarClientePorId(emprestimoDto.getIdCliente());
         if (cliente.isPresent()) {
-            Double taxaDeJuros = TipoRiscoEnum.retornarTaxaDeJuros(cliente.get().getRisco());
+            Double taxaDeJuros = TipoRisco.retornarTaxaDeJuros(cliente.get().getRisco());
             emprestimoDto.setTaxaJuros(taxaDeJuros);
             Double pagamentoMensal = calcularPagamentoMensal(emprestimoDto, taxaDeJuros);
 

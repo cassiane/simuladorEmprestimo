@@ -4,7 +4,7 @@ import com.dbc.simuladorEmprestimo.cliente.dtos.ClienteDto;
 import com.dbc.simuladorEmprestimo.cliente.dtos.EnderecoDto;
 import com.dbc.simuladorEmprestimo.cliente.entities.Cliente;
 import com.dbc.simuladorEmprestimo.cliente.entities.Endereco;
-import com.dbc.simuladorEmprestimo.emprestimo.enums.TipoRiscoEnum;
+import com.dbc.simuladorEmprestimo.cliente.enums.TipoRisco;
 
 public class ConverterUtil {
 
@@ -20,7 +20,7 @@ public class ConverterUtil {
         cliente.setEndereco(getEndereco());
         cliente.setRendimentoMensal(Double.valueOf(1000));
         cliente.setId(1);
-        cliente.setRisco(TipoRiscoEnum.C);
+        cliente.setRisco(TipoRisco.C);
 
         return cliente;
     }
@@ -57,7 +57,7 @@ public class ConverterUtil {
         clienteDto.setNome("Teste1");
         clienteDto.setSobrenome("Teste1");
         clienteDto.setRendimentoMensal(Double.valueOf(1000));
-        clienteDto.setRisco(TipoRiscoEnum.C);
+        clienteDto.setRisco(TipoRisco.C);
         clienteDto.setEnderecoDto(getEnderecoDto());
 
         return clienteDto;

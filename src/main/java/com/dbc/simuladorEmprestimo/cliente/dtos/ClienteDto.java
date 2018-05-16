@@ -1,6 +1,6 @@
 package com.dbc.simuladorEmprestimo.cliente.dtos;
 
-import com.dbc.simuladorEmprestimo.emprestimo.enums.TipoRiscoEnum;
+import com.dbc.simuladorEmprestimo.cliente.enums.TipoRisco;
 import com.google.common.base.MoreObjects;
 import com.google.common.base.Objects;
 
@@ -16,7 +16,7 @@ public class ClienteDto {
     private String nome;
     private String sobrenome;
     private Double rendimentoMensal;
-    private TipoRiscoEnum risco;
+    private TipoRisco risco;
     private EnderecoDto endereco;
 
     @Null
@@ -69,11 +69,11 @@ public class ClienteDto {
     }
 
     @Null
-    public TipoRiscoEnum getRisco() {
+    public TipoRisco getRisco() {
         return risco;
     }
 
-    public void setRisco(TipoRiscoEnum risco) {
+    public void setRisco(TipoRisco risco) {
         this.risco = risco;
     }
 

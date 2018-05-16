@@ -1,6 +1,6 @@
-package com.dbc.simuladorEmprestimo.emprestimo.enums;
+package com.dbc.simuladorEmprestimo.cliente.enums;
 
-public enum TipoRiscoEnum {
+public enum TipoRisco {
     A("A", Double.valueOf(1.9)),
     B("B", Double.valueOf(5)),
     C("C", Double.valueOf(10));
@@ -8,15 +8,15 @@ public enum TipoRiscoEnum {
     private String risco;
     private Double taxaDeJuros;
 
-    TipoRiscoEnum(String risco, Double taxaDeJuros) {
+    TipoRisco(String risco, Double taxaDeJuros) {
         this.risco = risco;
         this.taxaDeJuros = taxaDeJuros;
     }
 
-    public static Double retornarTaxaDeJuros(TipoRiscoEnum risco) {
-        for (TipoRiscoEnum tipoRiscoEnum : TipoRiscoEnum.values()) {
-            if (tipoRiscoEnum.equals(risco)) {
-                return tipoRiscoEnum.getTaxaDeJuros();
+    public static Double retornarTaxaDeJuros(TipoRisco risco) {
+        for (TipoRisco TipoRisco : TipoRisco.values()) {
+            if (TipoRisco.equals(risco)) {
+                return TipoRisco.getTaxaDeJuros();
             }
         }
         return null;
