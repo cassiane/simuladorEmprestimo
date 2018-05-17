@@ -1,89 +1,89 @@
-<!--<!DOCTYPE html>-->
-<!--<html>-->
-<!--<head>-->
-    <!--<meta charset="ISO-8859-1">-->
-    <!--<title>Main Page</title>-->
-<!--</head>-->
-<!--<body ng-app="demo">-->
-<!--<hr/>-->
-<!--<div class="container" ng-controller="UserController">-->
-    <!--<h3 class="page-title">Adicionar Cliente</h3>-->
-    <!--<div class="row">-->
-        <!--<form name="clienteForm">-->
-            <!--<div class="form-group">-->
-                <!--<input ng-model="clienteDto.nome" type="text" class="form-control" id="nome" placeholder="Nome">-->
-            <!--</div>-->
-            <!--<div class="form-group">-->
-                <!--<input ng-model="clienteDto.sobrenome" type="text" class="form-control" id="sobrenome" placeholder="Sobrenome">-->
-            <!--</div>-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Main Page</title>
+</head>
+<body ng-app="demo">
+<hr/>
+<div class="container" ng-controller="UserController">
+    <h3 class="page-title">Adicionar Cliente</h3>
+    <div class="row">
+        <form name="clienteForm">
+            <div class="form-group">
+                <input ng-model="clienteDto.nome" type="text" class="form-control" id="nome" placeholder="Nome">
+            </div>
+            <div class="form-group">
+                <input ng-model="clienteDto.sobrenome" type="text" class="form-control" id="sobrenome" placeholder="Sobrenome">
+            </div>
 
-            <!--<div class="form-group">-->
-                <!--<input ng-model="clienteDto.rendimentoMensal" type="number" class="form-control" id="rendimentoMensal" placeholder="Rendimento Mensal">-->
-            <!--</div>-->
+            <div class="form-group">
+                <input ng-model="clienteDto.rendimentoMensal" type="number" class="form-control" id="rendimentoMensal" placeholder="Rendimento Mensal">
+            </div>
 
-            <!--<h3 class="page-title"> Endereço </h3>-->
+            <h3 class="page-title"> Endereï¿½o </h3>
 
-            <!--<div class="form-group">-->
-                <!--<input ng-model="clienteDto.enderecoDto.cep" type="text" class="form-control" id="cep" placeholder="Buscar endereço por cep">-->
-                <!--&lt;!&ndash;<button ng-click="getenderecoDtoPorCep()" class="btn btn-primary">Buscar</button>&ndash;&gt;-->
-            <!--</div>-->
+            <div class="form-group">
+                <input ng-model="clienteDto.enderecoDto.cep" type="text" class="form-control" id="cep" placeholder="Buscar endereï¿½o por cep">
+                <!--<button ng-click="getenderecoDtoPorCep()" class="btn btn-primary">Buscar</button>-->
+            </div>
 
-            <!--<div class="form-group">-->
-                <!--<input ng-model="clienteDto.enderecoDto.pais" type="text" class="form-control" id="pais" placeholder="País">-->
-            <!--</div>-->
+            <div class="form-group">
+                <input ng-model="clienteDto.enderecoDto.pais" type="text" class="form-control" id="pais" placeholder="Paï¿½s">
+            </div>
 
-            <!--<div class="form-group">-->
-                <!--<input ng-model="clienteDto.enderecoDto.estado" type="text" class="form-control" id="estado" placeholder="Estado">-->
-            <!--</div>-->
+            <div class="form-group">
+                <input ng-model="clienteDto.enderecoDto.estado" type="text" class="form-control" id="estado" placeholder="Estado">
+            </div>
 
-            <!--<div class="form-group">-->
-                <!--<input ng-model="clienteDto.enderecoDto.cidade" type="text" class="form-control" id="cidade" placeholder="Cidade">-->
-            <!--</div>-->
+            <div class="form-group">
+                <input ng-model="clienteDto.enderecoDto.cidade" type="text" class="form-control" id="cidade" placeholder="Cidade">
+            </div>
 
-            <!--<div class="form-group">-->
-                <!--<input ng-model="clienteDto.enderecoDto.bairro" type="text" class="form-control" id="bairro" placeholder="Bairro">-->
-            <!--</div>-->
+            <div class="form-group">
+                <input ng-model="clienteDto.enderecoDto.bairro" type="text" class="form-control" id="bairro" placeholder="Bairro">
+            </div>
 
-            <!--<div class="form-group">-->
-                <!--<input ng-model="clienteDto.enderecoDto.logradouro" type="text" class="form-control" id="logradouro" placeholder="Logradouro">-->
-            <!--</div>-->
+            <div class="form-group">
+                <input ng-model="clienteDto.enderecoDto.logradouro" type="text" class="form-control" id="logradouro" placeholder="Logradouro">
+            </div>
 
-            <!--<div class="form-group">-->
-                <!--<input ng-model="clienteDto.enderecoDto.numero" type="text" class="form-control" id="numero" placeholder="Número">-->
-            <!--</div>-->
+            <div class="form-group">
+                <input ng-model="clienteDto.enderecoDto.numero" type="text" class="form-control" id="numero" placeholder="Nï¿½mero">
+            </div>
 
-            <!--<div class="form-group">-->
-                <!--<input ng-model="clienteDto.enderecoDto.apartamento" type="text" class="form-control" id="apartamento" placeholder="Apartamento">-->
-            <!--</div>-->
+            <div class="form-group">
+                <input ng-model="clienteDto.enderecoDto.apartamento" type="text" class="form-control" id="apartamento" placeholder="Apartamento">
+            </div>
 
-            <!--<button ng-click="saveUser()" class="btn btn-primary">Salvar</button>-->
-        <!--</form>-->
-    <!--</div>-->
-    <!--<hr/>-->
-    <!--<table class="table table-hover table-responsive-md">-->
-        <!--<thead>-->
-        <!--<th class="th-lg">Nome</th>-->
-        <!--<th class="th-lg">Sobrenome</th>-->
-        <!--<th class="th-lg">Rendimento Mensal</th>-->
-        <!--<th class="th-lg">Risco</th>-->
-        <!--</thead>-->
-        <!--<tbody>-->
-        <!--<tr ng-repeat="cliente in allClientes">-->
-            <!--<th class="th-lg">{{cliente.nome}}</th>-->
-            <!--<th class="th-lg">{{cliente.sobrenome}}</th>-->
-            <!--<th class="th-lg">{{cliente.rendimentoMensal}}</th>-->
-            <!--<th class="th-lg">{{cliente.risco}}</th>-->
-            <!--<th class="th-lg"><i class=""></i> </th>-->
-        <!--</tr>-->
-        <!--</tbody>-->
-    <!--</table>-->
-<!--</div>-->
-<!--</body>-->
-<!--<script src="js/lib/angular.min.js"></script>-->
-<!--<script src="js/lib/ui-bootstrap-tpls-2.5.0.min.js"></script>-->
-<!--<script src="js/app/app.js"></script>-->
-<!--<script src="js/app/UserController.js"></script>-->
-<!--<script src="js/app/UserService.js"></script>-->
-<!--<link rel="stylesheet" href="css/lib/bootstrap.min.css"/>-->
-<!--<link rel="stylesheet" href="css/app/app.css"/>-->
-<!--</html>-->
+            <button ng-click="saveUser()" class="btn btn-primary">Salvar</button>
+        </form>
+    </div>
+    <hr/>
+    <table class="table table-hover table-responsive-md">
+        <thead>
+        <th class="th-lg">Nome</th>
+        <th class="th-lg">Sobrenome</th>
+        <th class="th-lg">Rendimento Mensal</th>
+        <th class="th-lg">Risco</th>
+        </thead>
+        <tbody>
+        <tr ng-repeat="cliente in allClientes">
+            <th class="th-lg">{{cliente.nome}}</th>
+            <th class="th-lg">{{cliente.sobrenome}}</th>
+            <th class="th-lg">{{cliente.rendimentoMensal}}</th>
+            <th class="th-lg">{{cliente.risco}}</th>
+            <th class="th-lg"><i class=""></i> </th>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+<script src="js/lib/angular.min.js"></script>
+<script src="js/lib/ui-bootstrap-tpls-2.5.0.min.js"></script>
+<script src="js/app/app.js"></script>
+<script src="js/app/UserController.js"></script>
+<script src="js/app/UserService.js"></script>
+<link rel="stylesheet" href="css/lib/bootstrap.min.css"/>
+<link rel="stylesheet" href="css/app/app.css"/>
+</html>
