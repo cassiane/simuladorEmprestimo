@@ -2,18 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="63f030c3-068d-4b87-a106-74dae699633a" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/dbc/simuladorEmprestimo/cliente/controllers/EnderecoControllerTest.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/dbc/simuladorEmprestimo/cliente/services/EnderecoServiceTest.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/views/grid.html" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dbc/simuladorEmprestimo/cliente/dtos/ClienteDto.java" afterPath="$PROJECT_DIR$/src/main/java/com/dbc/simuladorEmprestimo/cliente/dtos/ClienteDto.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dbc/simuladorEmprestimo/cliente/entities/Cliente.java" afterPath="$PROJECT_DIR$/src/main/java/com/dbc/simuladorEmprestimo/cliente/entities/Cliente.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dbc/simuladorEmprestimo/cliente/services/ClienteService.java" afterPath="$PROJECT_DIR$/src/main/java/com/dbc/simuladorEmprestimo/cliente/services/ClienteService.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dbc/simuladorEmprestimo/config/SwaggerConfig.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dbc/simuladorEmprestimo/emprestimo/b" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dbc/simuladorEmprestimo/emprestimo/enums/TipoRiscoEnum.java" afterPath="$PROJECT_DIR$/src/main/java/com/dbc/simuladorEmprestimo/cliente/enums/TipoRisco.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cliente/converters/ConverterUtil.java" afterPath="$PROJECT_DIR$/src/test/java/cliente/converters/ConverterUtil.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/dbc/simuladorEmprestimo/cliente/controllers/ClienteControllerTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/dbc/simuladorEmprestimo/cliente/controllers/ClienteControllerTest.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/dbc/simuladorEmprestimo/cliente/services/ClienteServiceTest.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dbc/simuladorEmprestimo/cliente/controllers/HomeController.java" afterPath="$PROJECT_DIR$/src/main/java/com/dbc/simuladorEmprestimo/cliente/controllers/HomeController.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dbc/simuladorEmprestimo/cliente/dtos/EnderecoDto.java" afterPath="$PROJECT_DIR$/src/main/java/com/dbc/simuladorEmprestimo/cliente/dtos/EnderecoDto.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/app/UserController.js" afterPath="$PROJECT_DIR$/src/main/resources/static/js/app/UserController.js" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/app/app.js" afterPath="$PROJECT_DIR$/src/main/resources/static/js/app/app.js" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/views/index.html" afterPath="$PROJECT_DIR$/src/main/resources/static/views/index.html" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/app/UserController.js" afterPath="$PROJECT_DIR$/target/classes/static/js/app/UserController.js" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/app/app.js" afterPath="$PROJECT_DIR$/target/classes/static/js/app/app.js" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/views/index.html" afterPath="$PROJECT_DIR$/target/classes/static/views/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -29,52 +27,55 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="EnderecoControllerTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/dbc/simuladorEmprestimo/cliente/controllers/EnderecoControllerTest.java">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/views/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="129">
-              <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="29" selection-end-column="23" />
+            <state relative-caret-position="148">
+              <caret line="76" column="13" lean-forward="true" selection-start-line="70" selection-start-column="7" selection-end-line="76" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="grid.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/views/grid.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="117">
+              <caret line="270" column="20" lean-forward="true" selection-start-line="270" selection-start-column="20" selection-end-line="270" selection-end-column="20" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1684#1685#0" expanded="true" />
-                <element signature="e#1752#1753#0" expanded="true" />
+                <element signature="e#7506#7513#1" expanded="true" />
+                <element signature="e#9038#9045#1" expanded="true" />
+                <element signature="e#10574#10581#1" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EnderecoServiceTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/dbc/simuladorEmprestimo/cliente/services/EnderecoServiceTest.java">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/app/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="131">
-              <caret line="70" column="59" lean-forward="false" selection-start-line="70" selection-start-column="59" selection-end-line="70" selection-end-column="59" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="102">
+              <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ClienteDto.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/dbc/simuladorEmprestimo/cliente/dtos/ClienteDto.java">
+      <file leaf-file-name="UserController.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/app/UserController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="18" column="21" lean-forward="false" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
-              <folding>
-                <element signature="e#1997#1998#0" expanded="true" />
-                <element signature="e#2025#2026#0" expanded="true" />
-                <element signature="e#2070#2071#0" expanded="true" />
-                <element signature="e#2104#2105#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-764">
+              <caret line="4" column="39" lean-forward="false" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file leaf-file-name="HomeController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/dbc/simuladorEmprestimo/cliente/controllers/HomeController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="511">
-              <caret line="46" column="21" lean-forward="true" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="21" />
+            <state relative-caret-position="136">
+              <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -87,6 +88,7 @@
       <list>
         <option value="Class" />
         <option value="JUnit4 Test Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -108,8 +110,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/dbc/provaJavaDBC/controllers/ClienteController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dbc/provaJavaDBC/enums/TipoRiscoEnum.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dbc/provaJavaDBC/entities/Endereco.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dbc/provaJavaDBC/entities/Cliente.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dbc/provaJavaDBC/cliente/entities/Cliente.java" />
@@ -142,8 +142,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/dbc/simuladorEmprestimo/cliente/repositories/EnderecoRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dbc/simuladorEmprestimo/cliente/controllers/EnderecoController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/static/js/app/UserService.js" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/js/app/UserController.js" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/views/index.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/dbc/simuladorEmprestimo/cliente/dtos/EmprestimoDto.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dbc/simuladorEmprestimo/emprestimo/enums/TipoRiscoEnum.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/dbc/simuladorEmprestimo/cliente/services/ClienteServiceTest.java" />
@@ -159,6 +157,10 @@
         <option value="$PROJECT_DIR$/src/test/java/cliente/converters/ConverterUtil.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/dbc/simuladorEmprestimo/cliente/controllers/EnderecoControllerTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/dbc/simuladorEmprestimo/cliente/services/EnderecoServiceTest.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/js/app/UserController.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dbc/simuladorEmprestimo/cliente/controllers/HomeController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/views/index.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/views/grid.html" />
       </list>
     </option>
   </component>
@@ -181,10 +183,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="10" />
-    <option name="y" value="20" />
-    <option name="width" value="1346" />
-    <option name="height" value="688" />
+    <option name="width" value="1366" />
+    <option name="height" value="728" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -424,71 +424,6 @@
               <item name="static" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="simuladorEmprestimo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="simuladorEmprestimo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="simuladorEmprestimo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="simuladorEmprestimo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="simuladorEmprestimo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="simuladorEmprestimo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cliente" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="simuladorEmprestimo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="simuladorEmprestimo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cliente" type="462c0819:PsiDirectoryNode" />
-              <item name="converters" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="simuladorEmprestimo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="simuladorEmprestimo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cliente" type="462c0819:PsiDirectoryNode" />
-              <item name="repositories" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="simuladorEmprestimo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="simuladorEmprestimo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cliente" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="simuladorEmprestimo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="simuladorEmprestimo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cliente" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="simuladorEmprestimo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="simuladorEmprestimo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cliente" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -505,6 +440,7 @@
     <property name="settings.editor.selected.configurable" value="editor.preferences.appearance" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -540,7 +476,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.EnderecoServiceTest.buscarEnderecoPeloCep">
+  <component name="RunManager" selected="Application.SimuladorEmprestimo">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -905,6 +841,9 @@
           <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
       <option name="time" value="27" />
     </breakpoint-manager>
     <watches-manager />
@@ -961,14 +900,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dbc/simuladorEmprestimo/cliente/converters/EnderecoToDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="21" column="5" lean-forward="false" selection-start-line="6" selection-start-column="27" selection-end-line="21" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -1053,14 +984,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dbc/simuladorEmprestimo/cliente/dtos/EnderecoDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-432">
-          <caret line="21" column="35" lean-forward="false" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.13.RELEASE/spring-web-4.3.13.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="172">
@@ -1089,6 +1012,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1097,34 +1021,6 @@
         <state relative-caret-position="110">
           <caret line="104" column="0" lean-forward="false" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="30" lean-forward="false" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/app/UserController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="16" lean-forward="false" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/views/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-612">
-          <caret line="27" column="28" lean-forward="false" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/app/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="29" lean-forward="false" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -1148,14 +1044,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="32" lean-forward="false" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dbc/simuladorEmprestimo/cliente/controllers/HomeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1316,18 +1204,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/dbc/simuladorEmprestimo/cliente/controllers/ClienteControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-586">
-          <caret line="41" column="24" lean-forward="true" selection-start-line="40" selection-start-column="4" selection-end-line="41" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1938#1939#0" expanded="true" />
-            <element signature="e#2004#2005#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/cliente/converters/ConverterUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-38">
@@ -1343,28 +1219,6 @@
         <state relative-caret-position="119">
           <caret line="13" column="26" lean-forward="false" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/dbc/simuladorEmprestimo/cliente/controllers/EnderecoControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="29" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1684#1685#0" expanded="true" />
-            <element signature="e#1752#1753#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/dbc/simuladorEmprestimo/cliente/services/EnderecoServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="70" column="59" lean-forward="false" selection-start-line="70" selection-start-column="59" selection-end-line="70" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1394,6 +1248,100 @@
         <state relative-caret-position="511">
           <caret line="46" column="21" lean-forward="true" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="21" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dbc/simuladorEmprestimo/cliente/dtos/EnderecoDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1054">
+          <caret line="21" column="35" lean-forward="false" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="30" lean-forward="false" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/dbc/simuladorEmprestimo/cliente/controllers/ClienteControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="34" column="23" lean-forward="true" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1938#1939#0" expanded="false" />
+            <element signature="e#2004#2005#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/dbc/simuladorEmprestimo/cliente/services/EnderecoServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="896">
+          <caret line="70" column="59" lean-forward="false" selection-start-line="70" selection-start-column="59" selection-end-line="70" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/dbc/simuladorEmprestimo/cliente/controllers/EnderecoControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="28" column="21" lean-forward="true" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1684#1685#0" expanded="false" />
+            <element signature="e#1752#1753#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/app/UserController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-764">
+          <caret line="4" column="39" lean-forward="false" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dbc/simuladorEmprestimo/cliente/controllers/HomeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/app/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/views/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="76" column="13" lean-forward="true" selection-start-line="70" selection-start-column="7" selection-end-line="76" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/views/grid.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="270" column="20" lean-forward="true" selection-start-line="270" selection-start-column="20" selection-end-line="270" selection-end-column="20" />
+          <folding>
+            <element signature="e#7506#7513#1" expanded="true" />
+            <element signature="e#9038#9045#1" expanded="true" />
+            <element signature="e#10574#10581#1" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

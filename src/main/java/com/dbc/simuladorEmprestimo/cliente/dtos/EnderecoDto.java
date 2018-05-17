@@ -30,7 +30,7 @@ public class EnderecoDto {
         this.id = id;
     }
 
-    @NotNull
+    @NotNull(message = "O campo [país] é obrigatório")
     public String getPais() {
         return pais;
     }
@@ -39,7 +39,7 @@ public class EnderecoDto {
         this.pais = pais;
     }
 
-    @NotNull
+    @NotNull(message = "O campo [estado] é obrigatório")
     @Size(min = 2, max = 2, message = "Informe a sigla do estado. Exemplo: RS")
     public String getEstado() {
         return estado;
@@ -49,7 +49,7 @@ public class EnderecoDto {
         this.estado = estado;
     }
 
-    @NotNull
+    @NotNull(message = "O campo [cidade] é obrigatório")
     public String getCidade() {
         return cidade;
     }
@@ -58,7 +58,7 @@ public class EnderecoDto {
         this.cidade = cidade;
     }
 
-    @NotNull
+    @NotNull(message = "O campo [bairro] é obrigatório")
     public String getBairro() {
         return bairro;
     }
@@ -67,7 +67,7 @@ public class EnderecoDto {
         this.bairro = bairro;
     }
 
-    @NotNull
+    @NotNull(message = "O campo [logradouro] é obrigatório")
     public String getLogradouro() {
         return logradouro;
     }
@@ -76,7 +76,7 @@ public class EnderecoDto {
         this.logradouro = logradouro;
     }
 
-    @NotNull
+    @NotNull(message = "O campo [número] é obrigatório")
     public String getNumero() {
         return numero;
     }
@@ -93,7 +93,7 @@ public class EnderecoDto {
         this.apartamento = apartamento;
     }
 
-    @NotNull
+    @NotNull(message = "O campo [cep] é obrigatório")
     @Size(min = 8, max = 8, message = "Informe o cep com oito dígitos sem traço.")
     public String getCep() {
         return cep;
