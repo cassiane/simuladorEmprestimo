@@ -18,18 +18,19 @@
             </div>
 
             <div class="form-group">
+                <input type="number" ng-model="clienteDto.rendimentoMensal" ng-pattern="/^[0-9]+(\.[0-9]{1,2})?$/" step="0.01" />
                 <input ng-model="clienteDto.rendimentoMensal" type="number" class="form-control" id="rendimentoMensal" placeholder="Rendimento Mensal">
             </div>
 
-            <h3 class="page-title"> Endereï¿½o </h3>
+            <h3 class="page-title"> Endereço </h3>
 
             <div class="form-group">
-                <input ng-model="clienteDto.enderecoDto.cep" type="text" class="form-control" id="cep" placeholder="Buscar endereï¿½o por cep">
+                <input ng-model="clienteDto.enderecoDto.cep" type="text" class="form-control" id="cep" placeholder="Buscar endereço por cep">
                 <!--<button ng-click="getenderecoDtoPorCep()" class="btn btn-primary">Buscar</button>-->
             </div>
 
             <div class="form-group">
-                <input ng-model="clienteDto.enderecoDto.pais" type="text" class="form-control" id="pais" placeholder="Paï¿½s">
+                <input ng-model="clienteDto.enderecoDto.pais" type="text" class="form-control" id="pais" placeholder="País">
             </div>
 
             <div class="form-group">
@@ -49,7 +50,7 @@
             </div>
 
             <div class="form-group">
-                <input ng-model="clienteDto.enderecoDto.numero" type="text" class="form-control" id="numero" placeholder="Nï¿½mero">
+                <input ng-model="clienteDto.enderecoDto.numero" type="text" class="form-control" id="numero" placeholder="Número">
             </div>
 
             <div class="form-group">

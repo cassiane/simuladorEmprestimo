@@ -3,6 +3,20 @@
 var module = angular.module('demo.controllers', []);
 module.controller("UserController", [ "$scope", "UserService",
 		function($scope, UserService) {
+            $scope.emprestimoDto = {
+                idCliente : null,
+                clienteDto : null,
+                numeroParcelas : null,
+                taxaJuros : null,
+                montanteSolicitado : null,
+                montanteComJuros : null,
+                valorParcelas : null
+            };
+
+	        $scope.selecionarCliente = function(cliente) {
+                $scope.cliente = cliente;
+            }
+
             $scope.limpar = function() {
                 $scope.clienteDto = {
                     id : null,
@@ -34,8 +48,28 @@ module.controller("UserController", [ "$scope", "UserService",
                 });
             };
 
+            $scope.simularEmprestimo = function() {
+                UserService.simularEmprestimo($scope.emprestimoDto).then(function(value){
+                    $scope.emprestimoDto = value.data;
+                    console.log("Simulação feita com sucesso");
+                }, function error(response) {
+                     if (response.status == 409) {
+                         $scope.errorMessage = response.data.message;
+                     } else if (response.status == 400) {
+                         response.data.errors.forEach(function(el) {
+                             $scope.errorMessage = el;
+                         });
+                     } else {
+                         $scope.errorMessage = 'Erro excluindo cliente.';
+                     }
+                     $scope.message = '';
+                 }, function(value) {
+                   console.log("Nenhum callback para exclusão de cliente: " + value);
+                 });
+             }
+
             $scope.excluirCliente = function() {
-                UserService.excluirCliente($scope.id).then(function() {
+                UserService.excluirCliente($scope.cliente.id).then(function() {
                     $scope.limpar();
                     $scope.buscarTodosClientes();
                 }, function error(response) {
@@ -77,4 +111,5 @@ module.controller("UserController", [ "$scope", "UserService",
 
             $scope.buscarTodosClientes();
 			$scope.limpar();
+
 		} ]);
