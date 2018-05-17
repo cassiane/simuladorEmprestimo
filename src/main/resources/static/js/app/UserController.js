@@ -1,8 +1,18 @@
 'use strict'
 
 var module = angular.module('demo.controllers', []);
-module.controller("UserController", [ "$scope", "UserService",
-		function($scope, UserService) {
+module.controller("UserController", [ "$scope", "UserService", '$cacheFactory',
+		function($scope, UserService, $cacheFactory) {
+		     $scope.keys = [];
+             $scope.cache = $cacheFactory('cacheId');
+             $scope.put = function(key, value) {
+                 if (angular.isUndefined($scope.cache.get(key))) {
+                    $scope.keys.push(key);
+                 }
+             $scope.cache.put(key, angular.isUndefined(value) ? null : value);
+             };
+
+
             $scope.emprestimoDto = {
                 idCliente : null,
                 clienteDto : null,
@@ -49,8 +59,15 @@ module.controller("UserController", [ "$scope", "UserService",
             };
 
             $scope.simularEmprestimo = function() {
+                $scope.emprestimoDto.idCliente = $scope.cliente.id;
                 UserService.simularEmprestimo($scope.emprestimoDto).then(function(value){
                     $scope.emprestimoDto = value.data;
+                    $scope.put("emprestimoClienteId", $scope.emprestimoDto.data.idCliente);
+                    $scope.put("emprestimoMontanteSolicitado", $scope.emprestimoDto.data.montanteSolicitado);
+                    $scope.put("emprestimoMontanteComJuros", $scope.emprestimoDto.data.montanteComJuros);
+                    $scope.put("emprestimoTaxa", $scope.emprestimoDto.data.taxaJuros);
+                    $scope.put("emprestimoNumeroParcelas", $scope.emprestimoDto.data.numeroParcelas);
+                    $scope.put("emprestimoParcelaMensal", $scope.emprestimoDto.data.valorParcelas);
                     console.log("Simulação feita com sucesso");
                 }, function error(response) {
                      if (response.status == 409) {

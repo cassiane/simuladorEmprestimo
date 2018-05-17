@@ -136,12 +136,23 @@ public class ClienteService {
 
             emprestimoDto.setClienteDto(clienteToDto.convert(cliente.get()));
             emprestimoDto.setValorParcelas(pagamentoMensal);
-            emprestimoDto.setMontanteComJuros(pagamentoMensal * emprestimoDto.getNumeroParcelas());
+
+            Double montante = formatarDuasCasasDecimais(pagamentoMensal * emprestimoDto.getNumeroParcelas());
+            emprestimoDto.setMontanteComJuros(montante);
 
             return Optional.of(emprestimoDto);
         }
 
         return Optional.empty();
+    }
+
+    private Double formatarDuasCasasDecimais(Double valor) {
+        DecimalFormat df = new DecimalFormat();
+        df.applyPattern("0.00");
+        df.setRoundingMode(RoundingMode.UP);
+        String valorStr = df.format(valor).replace(",", ".");
+
+        return Double.valueOf(valorStr);
     }
 
     private double calcularPagamentoMensal(EmprestimoDto emprestimoDto, Double taxaDeJuros) throws ParseException {
@@ -155,10 +166,6 @@ public class ClienteService {
         Double divindoJurosMensais = taxaDeJurosMensal / menosUm;
         Double valorDasParcelas = emprestimoDto.getMontanteSolicitado() * divindoJurosMensais;
 
-        DecimalFormat df = new DecimalFormat();
-        df.applyPattern("0.00");
-        df.setRoundingMode(RoundingMode.UP);
-
-        return Double.valueOf(df.format(valorDasParcelas).replace(",", "."));
+        return formatarDuasCasasDecimais(valorDasParcelas);
     }
 }

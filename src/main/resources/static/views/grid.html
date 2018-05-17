@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"></script>
     <style type="text/css">
     body {
         color: #566787;
@@ -237,6 +238,14 @@ $(document).ready(function(){
 	// Activate tooltip
 	$('[data-toggle="tooltip"]').tooltip();
 });
+
+function Mudarestado(el) {
+  var display = document.getElementById(el).style.display;
+  if (display == "none")
+    document.getElementById(el).style.display = 'block';
+  else
+    document.getElementById(el).style.display = 'none';
+}
 </script>
 </head>
 <body ng-app="demo">
@@ -248,7 +257,7 @@ $(document).ready(function(){
                     <h2>Gerenciar <b>Clientes</b></h2>
                 </div>
                 <div class="col-sm-6">
-                    <a href="#addClienteModal" class="btn btn-success" data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>Adicionar Cliente</span></a>
+                    <a href="#addClienteModal" class="btn btn-success" data-toggle="modal" data-dismiss="modal"><i class="material-icons">&#xE147;</i> <span>Adicionar Cliente</span></a>
                 </div>
             </div>
         </div>
@@ -273,17 +282,38 @@ $(document).ready(function(){
                 <th class="th-lg">
                     <a ng-click="selecionarCliente(cliente)" href="#deleteClienteModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
                     <!--<a ng-click="selecionarCliente(cliente)" href="#simularEmprestimoModal" data-toggle="modal"> <i class="material-icons" data-toggle="tooltip" title="Simular Empréstimo"  data-backdrop="static">attach_money</i></a>-->
-                    <a ng-click="MinhaDiv = !MinhaDiv"> <i class="material-icons" title="Simular Empréstimo">attach_money</i></a>
+                    <a ng-click="selecionarCliente(cliente)" onclick="Mudarestado('minhaDiv')"> <i class="material-icons" title="Simular Empréstimo">attach_money</i></a>
                 </th>
             </tr>
-            <tr>
-                <th>
-                    <div id="minhaDiv">
-                        <form>
-                            <div class="form-group">
-                                <label>Cliente</label>
-                                <input ng-value="{{cliente.id}}" ng-model = "emprestimoDto.idCliente" type="text">
-                            </div>>
+
+            </tbody>
+        </table>
+        <div class="table-title">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h2>Simular <b>Empréstimo</b></h2>
+                </div>
+            </div>
+        </div>
+        <table class="table table-striped table-hover">
+            <thead>
+                <th class="th-lg">Cliente</th>
+                <th class="th-lg">Montante Solicitado</th>
+                <th class="th-lg">Montante com Juros</th>
+                <th class="th-lg">Taxa</th>
+                <th class="th-lg">Número de parcelas</th>
+                <th class="th-lg">Parcela Mensal</th>
+            </thead>
+            <tbody>
+                <p ng-if="keys.length"></p>
+                <tr>
+                    <th class="th-lg" ng-repeat="key in keys">
+                        <b ng-bind="cache.get(key)"></b>
+                    </th>
+                </tr>
+                <tr>
+                    <th colspan="6">
+                        <div id="minhaDiv" style="display:none">
                             <div class="form-group">
                                 <label>Número de Parcelas(meses) </label>
                                 <input type="text" ng-model = "emprestimoDto.numeroParcelas" class="form-control">
@@ -293,32 +323,15 @@ $(document).ready(function(){
                                 <input type="number" ng-model="emprestimoDto.montanteSolicitado" class="form-control" ng-pattern="/^[0-9]+(\.[0-9]{1,2})?$/" step="0.01" />
                             </div>
                             <div class="form-group">
-                                <button type="submit" ng-click="simularEmprestimo()" class="btn btn-success">Simular</button>
+                                <button ng-click="simularEmprestimo()" onclick="Mudarestado('minhaDiv')"class="btn btn-success">Simular</button>
                             </div>
-                            <table class="table table-striped table-hover">
-                                <thead>
-                                <tr>
-                                    <th>Montante Solicitado</th>
-                                    <th>Montante com Juros</th>
-                                    <th>Taxa</th>
-                                    <th>Parcela Mensal</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <th class="th-lg">{{$scope.emprestimoDto.data.montanteSolicitado}}</th>
-                                <th class="th-lg">{{$scope.emprestimoDto.data.montanteComJuros}}</th>
-                                <th class="th-lg">{{$scope.emprestimoDto.data.taxaJuros}}</th>
-                                <th class="th-lg">{{$scope.emprestimoDto.data.valorParcelas}}</th>
-                                </tbody>
-                            </table>
-                        </form>
-                    </div>
-                </th>>
-            </tr>
+                        </div>
+                    </th>
+                </tr>
             </tbody>
         </table>
     </div>
-    <!-- Edit Modal HTML -->
+    <!-- Add Cliente Modal HTML -->
     <div id="addClienteModal" class="modal fade">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -401,56 +414,9 @@ $(document).ready(function(){
             </div>
         </div>
     </div>
-    <!-- Simulação Modal HTML -->
-    <div id="simularEmprestimoModal"  class="modal fade" data-keyboard="false" data-backdrop="static">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <form name="emprestimoForm">
-                    <div class="modal-header">
-                        <h4 class="modal-title">Simular Empréstimo</h4>
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="form-group">
-                            <label>Cliente</label>
-                            <input ng-value="{{cliente.id}}" ng-model = "emprestimoDto.idCliente" type="text" class="form-control">
-                        </div>
-                            <div class="form-group">
-                            <label>Número de Parcelas(meses) </label>
-                            <input type="text" ng-model = "emprestimoDto.numeroParcelas" class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <label>Valor</label>
-                            <input type="number" ng-model="emprestimoDto.montanteSolicitado" class="form-control" ng-pattern="/^[0-9]+(\.[0-9]{1,2})?$/" step="0.01" />
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
-                        <button type="submit" ng-click="simularEmprestimo()" class="btn btn-success">Simular</button>
-                    </div>
-                    <table class="table table-striped table-hover">
-                        <thead>
-                        <tr>
-                            <th>Montante Solicitado</th>
-                            <th>Montante com Juros</th>
-                            <th>Taxa</th>
-                            <th>Parcela Mensal</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                            <th class="th-lg">{{$scope.emprestimoDto.data.montanteSolicitado}}</th>
-                            <th class="th-lg">{{$scope.emprestimoDto.data.montanteComJuros}}</th>
-                            <th class="th-lg">{{$scope.emprestimoDto.data.taxaJuros}}</th>
-                            <th class="th-lg">{{$scope.emprestimoDto.data.valorParcelas}}</th>
-                        </tbody>
-                    </table>
-                </form>
-            </div>
-        </div>
-    </div>
 </div>
 </body>
-<script src="js/lib/angular.min.js"></script>
+<!--<script src="js/lib/angular.min.js"></script>-->
 <script src="js/lib/ui-bootstrap-tpls-2.5.0.min.js"></script>
 <script src="js/app/app.js"></script>
 <script src="js/app/UserController.js"></script>
