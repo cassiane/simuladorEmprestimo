@@ -4,14 +4,7 @@
     <list default="true" id="63f030c3-068d-4b87-a106-74dae699633a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/app/UserController.js" afterPath="$PROJECT_DIR$/src/main/resources/static/js/app/UserController.js" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/app/UserService.js" afterPath="$PROJECT_DIR$/src/main/resources/static/js/app/UserService.js" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/app/app.js" afterPath="$PROJECT_DIR$/src/main/resources/static/js/app/app.js" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/views/grid.html" afterPath="$PROJECT_DIR$/src/main/resources/static/views/grid.html" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/app/UserController.js" afterPath="$PROJECT_DIR$/target/classes/static/js/app/UserController.js" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/app/UserService.js" afterPath="$PROJECT_DIR$/target/classes/static/js/app/UserService.js" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/app/app.js" afterPath="$PROJECT_DIR$/target/classes/static/js/app/app.js" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/views/grid.html" afterPath="$PROJECT_DIR$/target/classes/static/views/grid.html" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/views/index.html" afterPath="$PROJECT_DIR$/target/classes/static/views/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -27,11 +20,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="grid.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="grid.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/static/views/grid.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="523">
-              <caret line="302" column="49" lean-forward="true" selection-start-line="302" selection-start-column="49" selection-end-line="302" selection-end-column="49" />
+            <state relative-caret-position="3838">
+              <caret line="397" column="12" lean-forward="false" selection-start-line="397" selection-start-column="12" selection-end-line="397" selection-end-column="12" />
               <folding>
                 <element signature="e#10153#10160#1" expanded="true" />
                 <element signature="e#13714#13721#1" expanded="true" />
@@ -51,11 +44,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserController.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="UserController.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/app/UserController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="22" lean-forward="false" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+            <state relative-caret-position="373">
+              <caret line="109" column="13" lean-forward="false" selection-start-line="109" selection-start-column="13" selection-end-line="109" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -172,9 +165,9 @@
         <option value="$PROJECT_DIR$/src/main/resources/static/views/modal.html" />
         <option value="$PROJECT_DIR$/src/main/resources/static/js/app/app.js" />
         <option value="$PROJECT_DIR$/src/main/resources/static/js/app/UserService.js" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/js/app/UserController.js" />
         <option value="$PROJECT_DIR$/src/main/resources/static/css/app/app.css" />
         <option value="$PROJECT_DIR$/src/main/resources/static/views/grid.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/js/app/UserController.js" />
       </list>
     </option>
   </component>
@@ -1248,14 +1241,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/app/UserController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="22" lean-forward="false" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/app/app.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -1266,13 +1251,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/views/grid.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="523">
-          <caret line="302" column="49" lean-forward="true" selection-start-line="302" selection-start-column="49" selection-end-line="302" selection-end-column="49" />
+        <state relative-caret-position="3838">
+          <caret line="397" column="12" lean-forward="false" selection-start-line="397" selection-start-column="12" selection-end-line="397" selection-end-column="12" />
           <folding>
             <element signature="e#10153#10160#1" expanded="true" />
             <element signature="e#13714#13721#1" expanded="true" />
             <element signature="e#14766#14773#1" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/app/UserController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="109" column="13" lean-forward="false" selection-start-line="109" selection-start-column="13" selection-end-line="109" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
