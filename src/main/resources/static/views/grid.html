@@ -270,7 +270,7 @@ $(document).ready(function(){
                 <th class="th-lg">{{cliente.risco}}</th>
                 <th>
                     <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-                    <a href="#deleteClienteModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
+                    <a ng-click="selecionarCliente(cliente)" href="#deleteClienteModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
                     <a href="#deleteClienteModal" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Simular Empréstimo">&#xE872;</i></a>
                 </th>
             </tr>
@@ -355,7 +355,7 @@ $(document).ready(function(){
                     </div>
                     <div class="modal-footer">
                         <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
-                        <button type="submit" ng-click="excluirCliente($scope.id)"class="btn btn-danger">Excluir</button>
+                        <button type="submit" ng-click="excluirCliente($scope.id)" data-dismiss="modal" class="btn btn-danger">Excluir</button>
                     </div>
                 </form>
             </div>

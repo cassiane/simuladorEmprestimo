@@ -75,6 +75,10 @@ module.controller("UserController", [ "$scope", "UserService",
 				});
 			}
 
+			$scope.selecionarCliente = function(cliente) {
+			    $scope.id = cliente.id;
+			}
+
             $scope.buscarTodosClientes();
 			$scope.limpar();
 		} ]);
